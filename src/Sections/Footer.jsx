@@ -1,6 +1,7 @@
 
 
 import "../Styles/Sections.css"
+import { Link } from "react-router-dom"
 
 
 const Footer = () => {
