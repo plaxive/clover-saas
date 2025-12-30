@@ -1,5 +1,5 @@
+import Footer from "../Sections/Footer"
 import Navbar from "../Sections/Navbar"
-import Footer from "../Section/Footer"
 
 import "../Styles/Signup.css"
 import { Link } from "react-router-dom"
@@ -92,5 +92,3 @@ const Signup = () => {
 }
 
 export default Signup
-
-
