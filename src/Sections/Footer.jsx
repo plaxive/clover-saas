@@ -17,9 +17,9 @@ const Footer = () => {
             </div>
             <div className="right">
                <ul>
-                <li><Link to="/Home">Home</Link></li>
+                <li><Link to="/">Home</Link></li>
                 <li><Link to="/Pricing">Pricing</Link></li>
-                <li><Link to="/Blog">Home</Link></li>
+                <li><Link to="/Blog">Blog</Link></li>
                 <li><Link to="/Dashboard">contact</Link></li>
                </ul>
             </div>
@@ -30,3 +30,4 @@ const Footer = () => {
 }
 
 export default Footer
+
