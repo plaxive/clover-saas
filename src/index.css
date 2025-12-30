@@ -1,0 +1,154 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html{
+   scroll-behavior: smooth;
+}
+
+/* ========================
+   :root CSS Variables Setup
+   ======================== */
+:root {
+  /* -----------------
+     Colors
+     ----------------- */
+  --color-black: #0a0a0a;
+  --color-black-light: #1a1a1a;
+  --color-green: #00ff66;
+  --color-green-dark: #00cc55;
+  --color-white: #ffffff;
+  --color-gray-light: #f4f4f4;
+  --color-gray: #cccccc;
+  --color-gray-dark: #666666;
+
+  /* -----------------
+     Font Sizes
+     ----------------- */
+  --font-xs: 0.75rem;    /* 12px */
+  --font-sm: 0.875rem;   /* 14px */
+  --font-base: 1rem;     /* 16px */
+  --font-lg: 1.125rem;   /* 18px */
+  --font-xl: 1.25rem;    /* 20px */
+  --font-2xl: 1.5rem;    /* 24px */
+  --font-3xl: 1.875rem;  /* 30px */
+  --font-4xl: 2.25rem;   /* 36px */
+  --font-5xl: 3rem;      /* 48px */
+  
+  --vintage: "UnifrakturCook", cursive;
+  --bold: "BBH Bogle", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  /* -----------------
+     Spacing / Padding / Margin
+     ----------------- */
+  --spacing-xs: 0.25rem;  /* 4px */
+  --spacing-sm: 0.5rem;   /* 8px */
+  --spacing-md: 1rem;     /* 16px */
+  --spacing-lg: 1.5rem;   /* 24px */
+  --spacing-xl: 2rem;     /* 32px */
+  --spacing-2xl: 3rem; 
+  --spacing-3xl: 5rem;   /* 48px */
+
+  /* -----------------
+     Container Widths
+     ----------------- */
+  --container-width-sm: 640px;
+  --container-width-md: 768px;
+  --container-width-lg: 1024px;
+  --container-width-xl: 1280px;
+
+  /* -----------------
+     Border Radius
+     ----------------- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* -----------------
+     Shadows
+     ----------------- */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.15);
+}
+
+/* ========================
+   Global Resets & Base
+   ======================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--poppins);
+  font-size: var(--font-base);
+  color: var(--color-white);
+  zoom: 100%;
+  min-width: 320px;
+  background-color: var(--color-black);
+}
+
+/* ========================
+   Containers
+   ======================== */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* ========================
+   Headings
+   ======================== */
+h1 { font-size: var(--font-5xl); }
+h2 { font-size: var(--font-4xl); }
+h3 { font-size: var(--font-3xl); }
+h4 { font-size: var(--font-2xl); }
+h5 { font-size: var(--font-xl); }
+h6 { font-size: var(--font-lg); }
+
+/* ========================
+   Buttons
+   ======================== */
+.button {
+  display: inline-block;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  font-size: var(--font-base);
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+
+.button-primary {
+  background-color: var(--color-green);
+  color: var(--color-black);
+}
+.button-accent{
+   background-color: var(--color-white);
+   color: var(--color-black);
+   width: 200px;
+}
+.button-accent:hover{
+   background: var(--color-black);
+   color: var(--color-white);
+}
+.button-secondary{
+   background: transparent;
+   color: var(--color-gray);
+   border: 1px solid var(--color-green);
+}
+.button-primary:hover {
+  background-color: var(--color-green-dark);
+}
+
+

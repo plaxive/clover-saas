@@ -1,0 +1,61 @@
+
+
+.pricing-container{
+    margin: 8rem auto 0;
+    place-items: center;
+    width: 100%;
+}
+.pricing-container .pricing-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 1rem;
+    gap: 2rem;
+}
+.pricing-container .pricing-card{
+    padding: 3rem 2rem;
+    background: var(--color-black-light);
+    margin: 3rem 0;
+    border-radius: var(--radius-lg);
+    min-width: 0;
+}
+.pricing-container .pricing-card li{
+    list-style-type: none;
+    display: flex;
+    gap: 0.8rem;
+}
+.pricing-container .pricing-card p{
+    color: var(--color-gray);
+    padding: 0.5rem 0 1.5rem;
+}
+.pricing-container .pricing-card h2{
+    padding: 3rem 0.5rem;
+    text-align: center;
+    background: var(--color-black);
+    border-radius: var(--radius-lg);
+}
+.pricing-container .pricing-card ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+.pricing-container .pricing-card ul li i{
+    color: var(--color-gray);
+}
+.pricing-container .pricing-grid .pricing-card button{
+    margin: 2rem 0;
+}
+@media screen and (min-width: 650px) {
+   .pricing-container .pricing-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1100px) {
+    .pricing-container{
+        margin: 12rem auto 0;
+    }
+    .pricing-container .pricing-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

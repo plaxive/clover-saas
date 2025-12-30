@@ -1,0 +1,104 @@
+
+
+.signup-container{
+    margin: 8rem auto 0;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    padding: 2rem auto;
+}
+.signup{
+    display: grid;
+    height: 100%;
+    border-radius: var(--radius-md);
+    grid-template-columns: 1fr;
+    background: var(--color-black-light);
+}
+.signup .left{
+    background: var(--color-green-dark);
+    color: var(--color-black-light);
+    padding: 3rem 1rem;
+    height: 100%;
+}
+.signup .left .full-name, .signup .left .email, .signup .left .password{
+    padding: 1rem 0;
+    width: 100%;
+}
+.signup .left .name, .signup .left .mail, .signup .left .pass{
+     width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.2);
+border-radius: var(--radius-md);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.signup .left .name input, .signup .left .mail input, .signup .left .pass input{
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+.signup .left .btn{
+  width: 100%;
+  padding: 1rem 0;
+}
+.signup .left .btn button{
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: var(--radius-md);
+    border: none;
+    background: var(--color-black);
+    color: var(--color-gray-light);
+    transition: all 400ms;
+}
+.signup .left .btn button:hover{
+    background: var(--color-black-light);
+}
+
+.signup .right{
+    width: 100%;
+    padding: 3rem 1rem;
+}
+.signup .right h3 span{
+    color: var(--color-green-dark);
+}
+.signup .right p{
+    color: var(--color-gray);
+}
+.signup .right .tracks{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 0 0;
+}
+.signup .right .tracks .track{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--color-black);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+.signup .right .tracks .track .left-icon i{
+   color: var(--color-green-dark);
+   font-size: var(--font-xl);
+}
+.signup .bottom p span{
+    color: var(--color-black);
+    
+}
+@media screen and (min-width: 650px) {
+    .signup{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .signup-container{
+        margin: 12rem auto 0;
+    }
+}
